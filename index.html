@@ -12,9 +12,14 @@
 <!-- ============ TABLE SELECTION MODAL ============ -->
 <div id="tableModal" class="modal-overlay hidden">
   <div class="modal-box">
-    <div class="modal-brand">
-      <div class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M200-120v-400q-33 0-56.5-23.5T120-600v-212q0-12 8-20t20-8q12 0 20 8t8 20v132h36v-132q0-12 8-20t20-8q12 0 20 8t8 20v132h36v-132q0-12 8-20t20-8q12 0 20 8t8 20v212q0 33-23.5 56.5T280-520v400h-80Zm280 0v-404q-42-20-61-62.5T400-676q0-63 31.5-113.5T520-840q57 0 88.5 50.5T640-676q0 47-19 89.5T560-524v404h-80Zm200 0v-720q66 0 113 47t47 113v240h-80v320h-80Z"/></svg></div>
-      <span class="brand-name">Zaika</span>
+    <div class="modal-top-row">
+      <div class="modal-brand">
+        <div class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M200-120v-400q-33 0-56.5-23.5T120-600v-212q0-12 8-20t20-8q12 0 20 8t8 20v132h36v-132q0-12 8-20t20-8q12 0 20 8t8 20v132h36v-132q0-12 8-20t20-8q12 0 20 8t8 20v212q0 33-23.5 56.5T280-520v400h-80Zm280 0v-404q-42-20-61-62.5T400-676q0-63 31.5-113.5T520-840q57 0 88.5 50.5T640-676q0 47-19 89.5T560-524v404h-80Zm200 0v-720q66 0 113 47t47 113v240h-80v320h-80Z"/></svg></div>
+        <span class="brand-name">Zaika</span>
+      </div>
+      <button class="modal-close-btn" onclick="closeTableModal()" title="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
     </div>
     <h2 class="modal-title" id="modalTitle">Select Your Table</h2>
     <p class="modal-sub" id="modalSub">Choose your table number to begin ordering</p>
@@ -54,7 +59,7 @@
         <h1 class="hero-h1">Exceptional<br/>Dining,<br/><em>Delivered.</em></h1>
         <p class="hero-p">Browse our curated menu, place your order instantly, and enjoy freshly prepared dishes right at your table.</p>
         <div class="hero-btns">
-          <button class="btn-primary-lg" onclick="enterRestaurant()">
+          <button class="btn-primary-lg" onclick="browseMenuOnly()">
             Explore the Menu
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
@@ -131,7 +136,7 @@
       <p class="sec-p">A curated selection from our kitchen — the full menu awaits inside.</p>
       <div class="preview-grid" id="previewGrid"></div>
       <div class="preview-foot">
-        <button class="btn-primary-lg" onclick="enterRestaurant()">
+        <button class="btn-primary-lg" onclick="browseMenuOnly()">
           View Full Menu
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>

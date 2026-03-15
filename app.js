@@ -61,6 +61,39 @@ function enterRestaurant() {
   showTableModal();
 }
 
+// Browse menu without table selection (Explore Menu / View Full Menu buttons)
+function browseMenuOnly() {
+  var lp = document.getElementById('landingPage');
+  lp.style.transition = 'opacity .4s ease';
+  lp.style.opacity = '0';
+  setTimeout(function() {
+    lp.style.display = 'none';
+    var app = document.getElementById('appWrapper');
+    app.classList.remove('hidden');
+    app.style.opacity = '0';
+    app.style.transition = 'opacity .3s ease';
+    setTimeout(function() { app.style.opacity = '1'; }, 20);
+    setTableUI();
+    renderMenu();
+  }, 420);
+}
+
+// Close the table modal without selecting
+function closeTableModal() {
+  var modal = document.getElementById('tableModal');
+  if (!modal) return;
+  modal.style.transition = 'opacity .22s ease';
+  modal.style.opacity = '0';
+  setTimeout(function() {
+    modal.classList.add('hidden');
+    modal.style.opacity = '';
+    modal.style.transition = '';
+    selectedTable = null;
+    var err = document.getElementById('tableError');
+    if (err) err.classList.add('hidden');
+  }, 230);
+}
+
 function showTableModal() {
   var t = document.getElementById('modalTitle'), s = document.getElementById('modalSub');
   if (t) t.textContent = 'Select Your Table';

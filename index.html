@@ -503,19 +503,7 @@
 
   
 <!-- VEG / NON-VEG FLOATING SIDEBAR -->
-<div class="veg-sidebar" id="vegSidebar">
-  <button class="vsb-btn vsb-veg" id="vsb-veg" onclick="setSidebarDiet('veg')" title="Vegetarian only">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22s4-4 10-4 10 4 10 4"/><path d="M12 18V6M12 6C12 6 8 9 8 13M12 6c0 0 4 3 4 7"/></svg>
-    Veg
-  </button>
-  <button class="vsb-btn vsb-all vsb-active" id="vsb-all" onclick="setSidebarDiet('all')" title="Show all">
-    All
-  </button>
-  <button class="vsb-btn vsb-nonveg" id="vsb-nonveg" onclick="setSidebarDiet('nonveg')" title="Non-Veg only">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-    Non-Veg
-  </button>
-</div>
+
 <header class="app-hdr">
     <div class="app-hdr-in">
       <div class="hdr-left"><button class="hdr-home-btn" onclick="returnToLanding()" title="Back to Home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></button><div class="brand sm"><div class="brand-mark sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M200-120v-400q-33 0-56.5-23.5T120-600v-212q0-12 8-20t20-8q12 0 20 8t8 20v132h36v-132q0-12 8-20t20-8q12 0 20 8t8 20v132h36v-132q0-12 8-20t20-8q12 0 20 8t8 20v212q0 33-23.5 56.5T280-520v400h-80Zm280 0v-404q-42-20-61-62.5T400-676q0-63 31.5-113.5T520-840q57 0 88.5 50.5T640-676q0 47-19 89.5T560-524v404h-80Zm200 0v-720q66 0 113 47t47 113v240h-80v320h-80Z"/></svg></div><span class="brand-name">Zaika</span></div></div>
@@ -529,10 +517,7 @@
           Cart
           <span class="cart-badge hidden" id="cartCount">0</span>
         </button>
-        <button class="hdr-back-menu-btn admin-only hidden" onclick="adminLogout()">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-          Exit Admin
-        </button>
+        
       </div>
     </div>
   </header>

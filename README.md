@@ -51,4 +51,4 @@ It helps demonstrate how structured data can be integrated with frontend technol
 ---
 
 ## 👨‍💻 Author
-Ayush Kumar
+Ayush Kumar Sharma

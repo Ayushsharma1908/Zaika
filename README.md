@@ -39,7 +39,7 @@ Zaika
 
 1. Download or clone the repository
 2. Open the project folder
-3. Run the `index.html` file in any web browser
+3. Run the `index.html` file in any web browser in incognito
 
 ---
 

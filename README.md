@@ -1,4 +1,4 @@
-# 🍽️ Zaika – Restaurant Menu Web App
+mo# 🍽️ Zaika – Restaurant Menu Web App
 
 Zaika is a simple restaurant menu web application that displays food items dynamically using HTML, CSS, JavaScript, and XML.  
 This project demonstrates how menu data stored in an XML file can be fetched and displayed on a webpage.
@@ -52,3 +52,7 @@ It helps demonstrate how structured data can be integrated with frontend technol
 
 ## 👨‍💻 Author
 Ayush Kumar Sharma
+
+## Team members:-
+Ashish Kumar, Avdhesh Kumar, Aryan Raj, Mayank Ghosh.
+
